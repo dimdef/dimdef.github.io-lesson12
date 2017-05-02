@@ -1,0 +1,86 @@
+@light-color: #fff;
+@dark-color: #aeaeae;
+
+/* 
+.btn {
+
+	width:100px;
+ 		height:100px;
+ 		margin: 50%;
+ 		display: block;
+	color: @dark-color;
+	text-decoration: none;
+	border: 1px solid @dark-color;
+	radius: 50px;
+	font-size: 1.5rem;
+	margin-top: 1rem;
+	background-color: @light-color;
+	&:hover{
+		cursor: pointer;
+		background-color: @dark-color;
+		color: @light-color;
+	}
+} */
+ .box {
+ 	background: url(../img/bg.jpg);
+ 	width: 100vw;
+	height: 100vh;
+ 	&_link {
+ 	text-align: center;	
+ 	display: inline-block;
+	margin-top: 15rem;
+	margin-left: 15rem;	
+ 	a {	
+ 		display: inline-block;
+ 		color:@light-color;
+		text-decoration: none;
+		width: 25rem;
+		border:1px solid @light-color;
+		border-radius: 50px;
+		height: 4rem;
+		line-height: 4rem;
+		font-size: 1.5rem;
+		margin-top: 10rem;
+		&:hover {
+			cursor: pointer;
+			background-color: @light-color;
+			color: @dark-color;
+ 		}
+ 	}
+ }
+}
+.popap {
+	background: url(../img/hawaii.jpg) no-repeat center center;
+	width: 300px;
+	height: 400px;
+	background-color: #aeaeae;
+	position: fixed;
+	left: 50%;
+	top: 10%;
+	transform: translateX(-50%);
+	transition: all 0.2s;
+	display: none;
+	&-overlay {
+		background-color: rgba(0,0,0,.4);
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		width: 100vw;
+		height: 100vh;
+		display: none;
+		&:target {
+			& + .popap {
+		display: block;
+			}
+		display: block;
+		}
+
+	}
+	&-close {
+		position: absolute;
+		top: .5rem;
+		right: 1rem;
+		text-decoration: none;
+		font-size: 2rem;
+	}
+}
